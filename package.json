@@ -1,0 +1,29 @@
+{
+  "name": "disaster-view",
+  "version": "0.1.0",
+  "description": "Disaster-view Website",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "class-validator": "0.11.0",
+    "iban": "^0.0.14",
+    "interweave": "^13.0.0",
+    "next": "12.3.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-svg": "^15.1.9",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.20",
+    "eslint": "8.23.1",
+    "eslint-config-next": "12.3.1",
+    "typescript": "^4.8.3"
+  }
+}
