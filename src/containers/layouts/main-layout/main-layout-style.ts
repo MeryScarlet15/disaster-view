@@ -5,6 +5,7 @@ const MainLayoutContainer = styled.div`
   width: 100%; 
   
   .main-layout {
+    max-width: 100vw;
     width: 100%; 
     min-height: calc(100vh - 64px);
     padding-top: 64px; 

@@ -8,7 +8,9 @@ import styles from '../../styles/Home.module.css'
 
 const Home: React.FC = () => {
   return <HomeContainer>
-    <MainLayout>
+    <MainLayout
+      mainClassName='main-home'
+    >
       <EarthquakeInfoMobile
         className='earthquake-info-mobile'
         magnitude='3.8 M(mb)'
@@ -21,7 +23,7 @@ const Home: React.FC = () => {
         time='09:24'
       />
 
-      <section className="earthquake-info-section">
+      <section className="section-earthquake-info">
         <EarthquakeInfoDesktop
           className="article-selected-earthquake"
           magnitude='3.8 M(mb)'
@@ -33,6 +35,10 @@ const Home: React.FC = () => {
           date='2022/08/18'
           time='09:24'
         />
+      </section>
+
+      <section className="section-earthquake-map">
+
       </section>
 
 
