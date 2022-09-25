@@ -583,6 +583,10 @@ const GlobalStyles = createGlobalStyle`
   #CybotCookiebotDialog{
     transition: none !important;
   }
+
+  body {
+    background: #1B1B1B;
+  }
 `;
 
 export default GlobalStyles;

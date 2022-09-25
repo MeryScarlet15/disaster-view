@@ -3,8 +3,6 @@ import Head from 'next/head'
 import GlobalStyles from 'src/page-styles/global-styles'
 import { ThemeProvider } from "styled-components";
 
-import '../../styles/globals.css'
-
 import { colors } from '../../public/colors/colors'
 
 export function reportWebVitals(metric) {
@@ -68,7 +66,6 @@ function MyApp({ Component, pageProps }) {
       }}>
 
       <GlobalStyles />
-
       <Component {...pageProps} />
 
     </ThemeProvider>
