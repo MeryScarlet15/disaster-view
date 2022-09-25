@@ -14,6 +14,7 @@ interface EarthquakeInfoMobile {
   }
   date: string;
   time: string;
+  className?: string;
 }
 
 const EarthquakeInfoMobile: React.FC<EarthquakeInfoMobile> = (props: EarthquakeInfoMobile) => {
@@ -21,12 +22,15 @@ const EarthquakeInfoMobile: React.FC<EarthquakeInfoMobile> = (props: EarthquakeI
     magnitude,
     location,
     date,
-    time
+    time,
+    className
   } = props
 
-  return <EarthquakeInfoMobileContainer>
+  return <EarthquakeInfoMobileContainer
+    className={className || ''}
+  >
     <SwipeWrapper
-      minHeight={60}
+      minHeight={68}
       maxHeight={240}
       isOnClick
       className='earthquake-info-swiper'
