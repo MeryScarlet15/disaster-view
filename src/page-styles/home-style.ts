@@ -25,7 +25,15 @@ const HomeContainer = styled.div`
     margin-right: 32px; 
 
     @media screen and (min-width: ${breakpoints.ipadPro}px){
-      display: block; 
+      display: flex;
+      flex-direction: column; 
+      justify-content: space-between;  
+      min-height: calc(100vh - 176px);
+
+    }
+
+    .article-last-earthquakes {
+      margin-bottom: 24px; 
     }
   }
 
@@ -33,6 +41,7 @@ const HomeContainer = styled.div`
     border-radius: 16px; 
     background: ${colors.background};
     min-height: calc(100vh - 176px);
+    max-height: calc(100vh - 176px);
     width: calc(100% - 411px - 96px);
   }
 `
