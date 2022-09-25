@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const EarthquakeInfoDesktopContainer = styled.article`
   background: ${colors.background};
-  padding: 24px; 
+  padding: 8px 24px; 
   border-radius: 16px; 
 
   .earthquake-info-title {
