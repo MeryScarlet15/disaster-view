@@ -34,7 +34,7 @@ const MapEarthquakes: React.FC<MapEarthquakesProps> = (props: MapEarthquakesProp
   >
     <div className="map-earthquakes-topbar">
       <Heading2 className="map-earthquakes-title">
-        Earthquakes
+        Current earthquakes
       </Heading2>
 
       <div className="map-earthquakes-actions">

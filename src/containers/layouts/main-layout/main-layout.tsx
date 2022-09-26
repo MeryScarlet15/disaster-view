@@ -20,9 +20,18 @@ const MainLayout: React.FC<MainLayoutProps> = (props: MainLayoutProps) => {
   return <MainLayoutContainer
     className={`main-layout-container ${className || ''}`}
   >
-    <MainHeader
-      onClickMenuButton={(active: boolean) => setIsActiveAside(active)}
-    />
+    <div
+      className={`header-menu-button ${isActiveAside ? "active" : ""}`}
+      onClick={() =>
+        setIsActiveAside(!isActiveAside)
+      }
+    >
+      <div className="line line-one"></div>
+      <div className="line line-two"></div>
+      <div className="line line-three"></div>
+    </div>
+
+    <MainHeader />
 
     <MainAside isActive={isActiveAside} />
 

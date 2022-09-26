@@ -2,11 +2,11 @@ export const zIndex = {
   auto: "auto",
   default: 1,
   xxs: 100,
-  xs: 200,
-  s: 300,
-  m: 400,
-  l: 500,
-  xl: 600,
-  ssl: 700,
-  xxl: 800
+  xs: 400,
+  s: 800,
+  m: 1200,
+  l: 1600,
+  xl: 2000,
+  ssl: 2400,
+  xxl:2800
 };
