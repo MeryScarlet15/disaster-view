@@ -3,22 +3,36 @@ import { colors } from '@/public/colors/colors'
 import styled from 'styled-components'
 
 const MapEarthquakesContainer = styled.article`
-  padding: 8px 24px; 
+
+  @media screen and (min-width: ${breakpoints.ipadPro}px){
+    padding: 8px 24px; 
+  }
+
   .map-earthquakes-topbar {
     @media screen and (min-width: ${breakpoints.ipadPro}px){
       display: flex;
       align-items: center; 
-      justify-content: space-between;  
+      justify-content: space-between; 
+      margin-bottom: 8px;  
     }
 
     .map-earthquakes-title {
       color: ${colors.white};
+      display: none; 
+
+      @media screen and (min-width: ${breakpoints.ipadPro}px){
+        display: block; 
+      }
     }
   }
 
   .map-earthquakes {
     width: 100%; 
-    height: calc(100vh - 232px); 
+    height: 100vh; 
+
+    @media screen and (min-width: ${breakpoints.ipadPro}px){
+      height: calc(100vh - 232px); 
+    }
   }
 `
 
