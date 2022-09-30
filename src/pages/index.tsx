@@ -7,7 +7,10 @@ import MainLayout from '@/containers/layouts/main-layout/main-layout'
 import HomeContainer from '@/page-styles/home-style'
 import Head from 'next/head'
 import Image from 'next/image'
+import { useEffect } from 'react'
 import styles from '../../styles/Home.module.css'
+
+import disasterViewsApi from '../lib/disaster-views-api/disaster-views-api'
 
 const DEFAULT_EARTHQUAKES = [{
   magnitude: '3.8 M(mb)',
@@ -60,7 +63,19 @@ const DEFAULT_EARTHQUAKES = [{
   time: '09:24'
 }]
 
+const getEarthquakes = async () => {
+  const earthquakes = await disasterViewsApi.earthquakes.getEarthquakes(['id', 'magnitude'])
+  console.log(earthquakes)
+}
+
 const Home: React.FC = () => {
+
+  useEffect(() => {
+    console.log('...', process.env.NEXT_PUBLIC_API_URL)
+
+    getEarthquakes()
+  }, [])
+
   return <HomeContainer>
     <MainLayout
       mainClassName='main-home'
