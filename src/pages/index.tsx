@@ -71,6 +71,8 @@ const getEarthquakes = async () => {
 const Home: React.FC = () => {
 
   useEffect(() => {
+    console.log('...', process.env.NEXT_PUBLIC_API_URL)
+
     getEarthquakes()
   }, [])
 
